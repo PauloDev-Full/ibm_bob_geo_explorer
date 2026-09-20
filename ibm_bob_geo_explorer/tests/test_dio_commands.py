@@ -1,15 +1,15 @@
 """
 test_dio_commands.py
 ---------------------
-Testes unitários para os comandos DIO Explorer:
-  - /trilha   → cmd_trilha()
-  - /desafio  → cmd_desafio()
+Testes unitários para os comandos ibm_bob_geo_explorer:
+  - /trilha      → cmd_trilha()
+  - /desafio     → cmd_desafio()
   - /certificado → cmd_certificado()
 
 Cobertura alvo: ≥ 70 %
 Execute com:
-    pytest dio_explorer/tests/test_dio_commands.py -v --tb=short
-    pytest dio_explorer/tests/test_dio_commands.py --cov=dio_explorer.src.dio_commands --cov-report=term-missing
+    pytest ibm_bob_geo_explorer/tests/test_dio_commands.py -v --tb=short
+    pytest ibm_bob_geo_explorer/tests/test_dio_commands.py --cov=ibm_bob_geo_explorer.src.dio_commands --cov-report=term-missing
 """
 
 import json
@@ -25,7 +25,7 @@ _REPO_ROOT = Path(__file__).parent.parent.parent
 if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
-from dio_explorer.src.dio_commands import (
+from ibm_bob_geo_explorer.src.dio_commands import (
     load_data,
     find_trilha,
     list_tecnologias,

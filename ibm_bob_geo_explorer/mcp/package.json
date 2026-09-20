@@ -1,7 +1,7 @@
 {
-  "name": "dio-explorer-mcp",
+  "name": "ibm-bob-geo-explorer-mcp",
   "version": "0.1.0",
-  "description": "MCP server for DIO Explorer — exposes trilha, desafio and certificado tools via stdio and HTTP",
+  "description": "MCP server for ibm_bob_geo_explorer — exposes trilha, desafio and certificado tools via stdio and HTTP",
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -9,7 +9,7 @@
     "start:http": "node build/http.js"
   },
   "bin": {
-    "dio-explorer-mcp": "./build/index.js"
+    "ibm-bob-geo-explorer-mcp": "./build/index.js"
   },
   "files": [
     "build"

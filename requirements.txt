@@ -1,0 +1,6 @@
+# Runtime dependencies
+# (core logic has no runtime dependencies beyond the Python standard library)
+
+# Development / Testing
+pytest>=9.0
+pytest-cov>=7.0

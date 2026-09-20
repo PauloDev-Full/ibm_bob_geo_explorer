@@ -1,7 +1,9 @@
-# 📚 DIO Explorer — Documentação Completa do Projeto
+# 📚 ibm_bob_geo_explorer — Documentação Completa do Projeto
 
-> **Projeto:** DIO Explorer com IBM Bob + MCP Server  
-> **Objetivo:** Explorar trilhas de formação da plataforma DIO (Digital Innovation One) diretamente pelo chat do IBM Bob, usando comandos de linguagem natural ou slash commands.  
+> ⚠️ **Nota:** Este arquivo é a documentação histórica original. O ponto de entrada oficial do projeto é o [`README.md`](README.md) na raiz do repositório.
+
+> **Projeto:** ibm_bob_geo_explorer com IBM Bob + MCP Server
+> **Objetivo:** Explorar trilhas de formação da plataforma DIO (Digital Innovation One) diretamente pelo chat do IBM Bob, usando comandos de linguagem natural ou slash commands.
 > **Stack:** Python · TypeScript · Node.js · IBM Bob · MCP (Model Context Protocol)
 
 ---

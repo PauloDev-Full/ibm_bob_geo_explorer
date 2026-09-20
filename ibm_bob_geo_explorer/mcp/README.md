@@ -1,13 +1,13 @@
-# DIO Explorer — MCP Server
+# ibm_bob_geo_explorer — MCP Server
 
-Servidor MCP (Model Context Protocol) que expõe os dados e comandos do **DIO Explorer** para que qualquer cliente MCP (Bob, Claude Desktop, etc.) ou sistema externo possa consumir as trilhas de formação via **stdio**, **HTTP/API** ou **SSO**.
+Servidor MCP (Model Context Protocol) que expõe os dados e comandos do **ibm_bob_geo_explorer** para que qualquer cliente MCP (Bob, Claude Desktop, etc.) ou sistema externo possa consumir as trilhas de formação via **stdio**, **HTTP/API** ou **SSO**.
 
 ---
 
 ## Arquitetura
 
 ```
-dio_explorer/mcp/
+ibm_bob_geo_explorer/mcp/
 ├── src/
 │   ├── dio.ts       ← lógica de negócio (trilha, desafio, certificado)
 │   ├── index.ts     ← servidor MCP — transporte stdio (Bob local)
@@ -29,7 +29,7 @@ dio_explorer/mcp/
 ## Instalação e build
 
 ```bash
-cd dio_explorer/mcp
+cd ibm_bob_geo_explorer/mcp
 npm install
 npm run build
 ```
@@ -138,3 +138,7 @@ O servidor HTTP gerencia sessões por `mcp-session-id`. Cada cliente novo recebe
 ## Tecnologias disponíveis (dados em `../data/trilhas_dio.json`)
 
 Execute `list_trilhas` para ver a lista completa e atualizada.
+
+---
+
+*ibm_bob_geo_explorer MCP Server — parte do projeto ibm_bob_geo.*

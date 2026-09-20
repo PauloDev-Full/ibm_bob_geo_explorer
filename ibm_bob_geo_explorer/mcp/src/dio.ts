@@ -1,7 +1,7 @@
 /**
  * dio.ts
  * ------
- * Pure TypeScript re-implementation of the DIO Explorer core logic,
+ * Pure TypeScript re-implementation of the ibm_bob_geo_explorer core logic,
  * mirroring the Python module at ../src/dio_commands.py.
  * All public functions return plain strings (Markdown-formatted).
  */

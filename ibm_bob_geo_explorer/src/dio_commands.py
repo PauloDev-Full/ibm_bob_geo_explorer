@@ -1,10 +1,10 @@
 """
 dio_commands.py
 ---------------
-Core logic for the DIO Explorer Bob commands:
-  - trilha   : renders a learning-path overview from trilhas_dio.json
-  - desafio  : generates a formatted coding challenge for a technology
-  - certificado: emits a mock completion certificate
+Core logic for the ibm_bob_geo_explorer Bob commands:
+  - trilha      : renders a learning-path overview from trilhas_dio.json
+  - desafio     : generates a formatted coding challenge for a technology
+  - certificado : emits a mock completion certificate
 
 All public functions return a plain string (Markdown-formatted).
 """

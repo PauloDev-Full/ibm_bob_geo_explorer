@@ -32,7 +32,7 @@ const ALLOWED_ORIGIN = process.env["ALLOWED_ORIGIN"] ?? "*";
 // Build MCP server (same tools as stdio transport)
 // ---------------------------------------------------------------------------
 function buildMcpServer(): McpServer {
-  const server = new McpServer({ name: "dio-explorer", version: "0.1.0" });
+  const server = new McpServer({ name: "ibm-bob-geo-explorer", version: "0.1.0" });
 
   server.registerTool(
     "list_trilhas",
@@ -163,7 +163,7 @@ function authMiddleware(req: Request, res: Response, next: NextFunction) {
 
 // Health check (no auth required)
 app.get("/health", (_req: Request, res: Response) => {
-  res.json({ status: "ok", server: "dio-explorer-mcp", version: "0.1.0" });
+  res.json({ status: "ok", server: "ibm-bob-geo-explorer-mcp", version: "0.1.0" });
 });
 
 // MCP endpoint — one transport instance per session
@@ -180,13 +180,13 @@ app.all("/mcp", authMiddleware, async (req: Request, res: Response) => {
         sessionIdGenerator: () => crypto.randomUUID(),
         onsessioninitialized: (id) => {
           transports.set(id, transport!);
-          console.error(`[dio-explorer] new session: ${id}`);
+          console.error(`[ibm-bob-geo-explorer] new session: ${id}`);
         },
       });
       transport.onclose = () => {
         if (transport!.sessionId) {
           transports.delete(transport!.sessionId);
-          console.error(`[dio-explorer] session closed: ${transport!.sessionId}`);
+          console.error(`[ibm-bob-geo-explorer] session closed: ${transport!.sessionId}`);
         }
       };
       const mcpServer = buildMcpServer();
@@ -195,7 +195,7 @@ app.all("/mcp", authMiddleware, async (req: Request, res: Response) => {
 
     await transport.handleRequest(req, res, req.body);
   } catch (err) {
-    console.error("[dio-explorer] request error:", err);
+    console.error("[ibm-bob-geo-explorer] request error:", err);
     if (!res.headersSent) {
       res.status(500).json({ error: "Internal server error" });
     }
@@ -204,11 +204,11 @@ app.all("/mcp", authMiddleware, async (req: Request, res: Response) => {
 
 app.listen(PORT, () => {
   console.error(
-    `[dio-explorer] HTTP MCP server listening on http://0.0.0.0:${PORT}/mcp`
+    `[ibm-bob-geo-explorer] HTTP MCP server listening on http://0.0.0.0:${PORT}/mcp`
   );
   if (API_KEY) {
-    console.error(`[dio-explorer] API key protection ENABLED`);
+    console.error(`[ibm-bob-geo-explorer] API key protection ENABLED`);
   } else {
-    console.error(`[dio-explorer] WARNING: no API_KEY set — server is open`);
+    console.error(`[ibm-bob-geo-explorer] WARNING: no API_KEY set — server is open`);
   }
 });

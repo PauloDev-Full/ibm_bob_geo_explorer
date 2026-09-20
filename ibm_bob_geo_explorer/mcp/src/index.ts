@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * index.ts — DIO Explorer MCP Server (stdio transport)
+ * index.ts — ibm_bob_geo_explorer MCP Server (stdio transport)
  * -------------------------------------------------------
  * Runs as a child process spawned by Bob via stdio.
  * Exposes four tools:
@@ -15,7 +15,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import { cmdTrilha, cmdDesafio, cmdCertificado, loadData, listTecnologias } from "./dio.js";
 
-const server = new McpServer({ name: "dio-explorer", version: "0.1.0" });
+const server = new McpServer({ name: "ibm-bob-geo-explorer", version: "0.1.0" });
 
 // ---------------------------------------------------------------------------
 // Tool: list_trilhas
@@ -142,7 +142,7 @@ server.registerTool(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("dio-explorer MCP server running on stdio");
+  console.error("ibm-bob-geo-explorer MCP server running on stdio");
 }
 
 main().catch((err) => {

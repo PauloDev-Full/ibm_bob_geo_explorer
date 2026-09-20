@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ibm-bob-geo-explorer"
+version = "0.1.0"
+description = "IBM Bob + MCP Server for DIO learning-path exploration"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0",
+    "pytest-cov>=7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ibm_bob_geo_explorer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["ibm_bob_geo_explorer/tests"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["ibm_bob_geo_explorer/src"]
