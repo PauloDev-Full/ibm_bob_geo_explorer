@@ -1,0 +1,788 @@
+{
+  "fonte": "https://dio.me",
+  "ultima_atualizacao": "2025-01-01",
+  "trilhas_formacao": [
+    {
+      "id": 1,
+      "nome": "Formação Python Developer",
+      "tecnologia": "Python",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 8,
+      "xp_total": 19040,
+      "duracao_horas": 68,
+      "descricao": "Aprenda Python do zero ao avançado, cobrindo sintaxe, POO, APIs REST, manipulação de dados, automação e boas práticas de desenvolvimento.",
+      "badges_disponiveis": [
+        {
+          "nome": "Python Essentials",
+          "descricao": "Conclua os módulos fundamentais de Python",
+          "xp_requerido": 3000
+        },
+        {
+          "nome": "Python Developer",
+          "descricao": "Complete toda a trilha de Python Developer",
+          "xp_requerido": 19040
+        },
+        {
+          "nome": "POO com Python",
+          "descricao": "Domine Programação Orientada a Objetos em Python",
+          "xp_requerido": 7000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 50,
+        "descricao_promocao": "Semana do Programador — 50% off em planos anuais",
+        "validade_promocao": "2025-09-13"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1497.00,
+        "descricao": "Acesso vitalício ao conteúdo da formação, incluindo atualizações futuras"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Dúvidas sobre Python com Especialistas",
+          "frequencia": "Quinzenal",
+          "plataforma": "YouTube / Discord DIO"
+        },
+        {
+          "titulo": "Code Review ao Vivo — Projetos Python",
+          "frequencia": "Mensal",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Introdução ao Python e Ambiente de Desenvolvimento",
+        "Estruturas de Dados e Controle de Fluxo",
+        "Programação Orientada a Objetos com Python",
+        "Trabalhando com APIs REST em Python",
+        "Banco de Dados com Python (SQLite e PostgreSQL)",
+        "Automação e Scripts com Python",
+        "Testes Unitários e Boas Práticas",
+        "Projeto Final: Aplicação Python Completa"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 2,
+      "nome": "Formação Java Developer",
+      "tecnologia": "Java",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 10,
+      "xp_total": 22000,
+      "duracao_horas": 76,
+      "descricao": "Formação completa em Java, abrangendo fundamentos, POO, Spring Boot, microsserviços, testes e deploy em cloud.",
+      "badges_disponiveis": [
+        {
+          "nome": "Java Fundamentals",
+          "descricao": "Complete os fundamentos da linguagem Java",
+          "xp_requerido": 4000
+        },
+        {
+          "nome": "Spring Boot Expert",
+          "descricao": "Domine o desenvolvimento com Spring Boot",
+          "xp_requerido": 12000
+        },
+        {
+          "nome": "Java Developer",
+          "descricao": "Conclusão completa da trilha Java Developer",
+          "xp_requerido": 22000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 30,
+        "descricao_promocao": "Desconto exclusivo para novos assinantes — 30% off no primeiro mês",
+        "validade_promocao": "2025-12-31"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1797.00,
+        "descricao": "Acesso vitalício com suporte à comunidade e atualizações de conteúdo"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Mentoria ao Vivo — Java com Spring Boot",
+          "frequencia": "Semanal",
+          "plataforma": "YouTube / Discord DIO"
+        },
+        {
+          "titulo": "Desafio de Código Java ao Vivo",
+          "frequencia": "Mensal",
+          "plataforma": "Twitch DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Introdução ao Java e JDK",
+        "Estruturas de Dados em Java",
+        "Programação Orientada a Objetos com Java",
+        "Coleções e Generics",
+        "Tratamento de Exceções e Boas Práticas",
+        "Spring Framework e Spring Boot",
+        "Persistência com JPA e Hibernate",
+        "APIs RESTful com Spring Boot",
+        "Microsserviços com Spring Cloud",
+        "Testes e Deploy em Cloud"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 3,
+      "nome": "Formação Angular Developer",
+      "tecnologia": "Angular",
+      "nivel": "Intermediário ao Avançado",
+      "numero_de_modulos": 7,
+      "xp_total": 16500,
+      "duracao_horas": 54,
+      "descricao": "Aprenda a construir aplicações web modernas e escaláveis com Angular, TypeScript, RxJS e integração com back-end.",
+      "badges_disponiveis": [
+        {
+          "nome": "Angular Basics",
+          "descricao": "Domine os componentes fundamentais do Angular",
+          "xp_requerido": 3500
+        },
+        {
+          "nome": "RxJS & State Management",
+          "descricao": "Expertise em programação reativa e gerenciamento de estado",
+          "xp_requerido": 9000
+        },
+        {
+          "nome": "Angular Developer",
+          "descricao": "Conclusão da formação Angular Developer",
+          "xp_requerido": 16500
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": false,
+        "percentual_desconto": 0,
+        "descricao_promocao": "Sem promoção ativa no momento",
+        "validade_promocao": null
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1297.00,
+        "descricao": "Acesso vitalício ao conteúdo atualizado da formação Angular"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Construindo Apps com Angular ao Vivo",
+          "frequencia": "Quinzenal",
+          "plataforma": "YouTube DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Fundamentos do TypeScript",
+        "Introdução ao Angular CLI e Arquitetura",
+        "Componentes, Diretivas e Pipes",
+        "Roteamento e Navegação",
+        "Formulários Reativos e Template-Driven",
+        "Consumo de APIs com HttpClient e RxJS",
+        "Projeto Final: Aplicação Angular Completa"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 4,
+      "nome": "Formação React Developer",
+      "tecnologia": "React",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 9,
+      "xp_total": 20500,
+      "duracao_horas": 72,
+      "descricao": "Formação completa em React, cobrindo hooks, gerenciamento de estado com Redux, React Query, TypeScript, testes e deploy.",
+      "badges_disponiveis": [
+        {
+          "nome": "React Fundamentals",
+          "descricao": "Complete os fundamentos do React",
+          "xp_requerido": 4000
+        },
+        {
+          "nome": "React Hooks Master",
+          "descricao": "Domine todos os React Hooks e custom hooks",
+          "xp_requerido": 9000
+        },
+        {
+          "nome": "React Developer",
+          "descricao": "Conclusão da formação React Developer",
+          "xp_requerido": 20500
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 40,
+        "descricao_promocao": "Black Friday DIO — 40% off em qualquer plano",
+        "validade_promocao": "2025-11-30"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1597.00,
+        "descricao": "Acesso vitalício com todos os projetos práticos incluídos"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "React na Prática — Live Coding",
+          "frequencia": "Semanal",
+          "plataforma": "YouTube / Twitch DIO"
+        },
+        {
+          "titulo": "Code Review de Projetos React",
+          "frequencia": "Quinzenal",
+          "plataforma": "Discord DIO"
+        },
+        {
+          "titulo": "Novidades do React — React Conf Recap",
+          "frequencia": "Sob demanda",
+          "plataforma": "YouTube DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Fundamentos de JavaScript Moderno (ES6+)",
+        "Introdução ao React e JSX",
+        "Componentes Funcionais e Class Components",
+        "Hooks: useState, useEffect e useContext",
+        "Gerenciamento de Estado com Redux e Redux Toolkit",
+        "React Query e Requisições HTTP",
+        "React com TypeScript",
+        "Testes em React com Jest e Testing Library",
+        "Deploy de Aplicações React"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 5,
+      "nome": "Formação Machine Learning Specialist",
+      "tecnologia": "Machine Learning / Python",
+      "nivel": "Intermediário ao Avançado",
+      "numero_de_modulos": 11,
+      "xp_total": 25000,
+      "duracao_horas": 95,
+      "descricao": "Torne-se especialista em Machine Learning com Python, Scikit-learn, TensorFlow, redes neurais, NLP e MLOps.",
+      "badges_disponiveis": [
+        {
+          "nome": "ML Foundations",
+          "descricao": "Domine os fundamentos de Machine Learning",
+          "xp_requerido": 5000
+        },
+        {
+          "nome": "Deep Learning Practitioner",
+          "descricao": "Complete os módulos de redes neurais e deep learning",
+          "xp_requerido": 14000
+        },
+        {
+          "nome": "NLP Specialist",
+          "descricao": "Expertise em Processamento de Linguagem Natural",
+          "xp_requerido": 20000
+        },
+        {
+          "nome": "Machine Learning Specialist",
+          "descricao": "Conclusão completa da formação ML Specialist",
+          "xp_requerido": 25000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 35,
+        "descricao_promocao": "Bootcamp de IA — bundle com desconto especial",
+        "validade_promocao": "2025-08-31"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 2497.00,
+        "descricao": "Acesso vitalício com labs práticos em cloud incluídos"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Semana do Machine Learning — Lives Diárias",
+          "frequencia": "Semanal (evento especial)",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Kaggle Competition ao Vivo",
+          "frequencia": "Mensal",
+          "plataforma": "YouTube / Discord DIO"
+        },
+        {
+          "titulo": "Papers with Code — Leitura e Implementação",
+          "frequencia": "Quinzenal",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Python para Ciência de Dados (NumPy, Pandas, Matplotlib)",
+        "Estatística e Probabilidade para ML",
+        "Algoritmos Supervisionados (Regressão, Classificação)",
+        "Algoritmos Não Supervisionados (Clustering, Redução Dimensional)",
+        "Avaliação de Modelos e Engenharia de Features",
+        "Redes Neurais com TensorFlow e Keras",
+        "Deep Learning — CNNs e Visão Computacional",
+        "Processamento de Linguagem Natural (NLP)",
+        "Modelos de Linguagem e Transformers",
+        "MLOps — Deploy e Monitoramento de Modelos",
+        "Projeto Final: Pipeline de ML End-to-End"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 6,
+      "nome": "Formação AWS Cloud Practitioner",
+      "tecnologia": "Amazon Web Services (AWS)",
+      "nivel": "Básico ao Intermediário",
+      "numero_de_modulos": 6,
+      "xp_total": 14000,
+      "duracao_horas": 50,
+      "descricao": "Prepare-se para a certificação AWS Cloud Practitioner com conteúdo alinhado ao exame oficial, cobrindo todos os domínios da prova.",
+      "badges_disponiveis": [
+        {
+          "nome": "AWS Essentials",
+          "descricao": "Complete a introdução à nuvem AWS",
+          "xp_requerido": 3000
+        },
+        {
+          "nome": "AWS Cloud Practitioner Ready",
+          "descricao": "Preparação completa para o exame CLF-C02",
+          "xp_requerido": 14000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 60,
+        "descricao_promocao": "Parceria AWS — voucher de desconto no exame incluso para assinantes Pro",
+        "validade_promocao": "2025-12-31"
+      },
+      "vitalicio": {
+        "disponivel": false,
+        "preco_vitalicio_brl": null,
+        "descricao": "Disponível apenas em planos de assinatura recorrente"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "AWS re:Invent Recap ao Vivo",
+          "frequencia": "Anual",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Simulado ao Vivo — AWS Cloud Practitioner",
+          "frequencia": "Mensal",
+          "plataforma": "YouTube / Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Fundamentos de Cloud Computing e AWS",
+        "Serviços Principais de Computação (EC2, Lambda, ECS)",
+        "Armazenamento e Banco de Dados na AWS",
+        "Redes e Segurança na AWS",
+        "Billing, Precificação e Suporte AWS",
+        "Simulados e Revisão para o Exame CLF-C02"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 7,
+      "nome": "Formação Node.js Fundamentals",
+      "tecnologia": "Node.js / JavaScript",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 8,
+      "xp_total": 18000,
+      "duracao_horas": 62,
+      "descricao": "Aprenda a construir back-ends escaláveis com Node.js, Express, autenticação JWT, testes, Docker e integração com bancos de dados.",
+      "badges_disponiveis": [
+        {
+          "nome": "Node.js Basics",
+          "descricao": "Domine os fundamentos do Node.js e do event loop",
+          "xp_requerido": 3500
+        },
+        {
+          "nome": "REST API Expert",
+          "descricao": "Construção de APIs RESTful robustas com Express",
+          "xp_requerido": 9000
+        },
+        {
+          "nome": "Node.js Developer",
+          "descricao": "Conclusão da formação Node.js Fundamentals",
+          "xp_requerido": 18000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 25,
+        "descricao_promocao": "Promoção relâmpago — 25% off em planos mensais",
+        "validade_promocao": "2025-07-31"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1397.00,
+        "descricao": "Acesso vitalício com projetos práticos e comunidade exclusiva"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Node.js na Prática — APIs e Autenticação",
+          "frequencia": "Quinzenal",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Desafio Back-end ao Vivo",
+          "frequencia": "Mensal",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Fundamentos de JavaScript (ES6+) e TypeScript",
+        "Introdução ao Node.js e Event Loop",
+        "Criando APIs RESTful com Express.js",
+        "Autenticação e Autorização com JWT",
+        "Integração com Bancos de Dados (PostgreSQL e MongoDB)",
+        "Testes em Node.js (Jest e Supertest)",
+        "Containerização com Docker",
+        "Deploy em Cloud (Heroku, Railway, AWS)"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 8,
+      "nome": "Formação .NET Developer",
+      "tecnologia": ".NET / C#",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 9,
+      "xp_total": 21000,
+      "duracao_horas": 70,
+      "descricao": "Formação completa em .NET com C#, cobrindo desde fundamentos até ASP.NET Core, Entity Framework, microsserviços e Azure.",
+      "badges_disponiveis": [
+        {
+          "nome": "C# Fundamentals",
+          "descricao": "Domine os fundamentos do C# e .NET",
+          "xp_requerido": 4000
+        },
+        {
+          "nome": "ASP.NET Core Expert",
+          "descricao": "Especialista em APIs com ASP.NET Core",
+          "xp_requerido": 11000
+        },
+        {
+          "nome": ".NET Developer",
+          "descricao": "Conclusão da formação .NET Developer",
+          "xp_requerido": 21000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 45,
+        "descricao_promocao": "Parceria Microsoft — acesso ao Azure for Students incluso",
+        "validade_promocao": "2025-10-31"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1697.00,
+        "descricao": "Acesso vitalício com conteúdo alinhado às certificações Microsoft"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Microsoft Tech Live — .NET e Azure",
+          "frequencia": "Mensal",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Mentoria ao Vivo com MVPs Microsoft",
+          "frequencia": "Bimestral",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Fundamentos do C# e .NET SDK",
+        "Programação Orientada a Objetos com C#",
+        "LINQ e Coleções em .NET",
+        "ASP.NET Core — Web APIs",
+        "Entity Framework Core e Migrations",
+        "Autenticação com Identity e JWT",
+        "Arquitetura Limpa e DDD",
+        "Microsserviços com .NET e RabbitMQ",
+        "Deploy no Azure com Azure DevOps"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 9,
+      "nome": "Formação Kotlin Developer",
+      "tecnologia": "Kotlin / Android",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 8,
+      "xp_total": 17500,
+      "duracao_horas": 60,
+      "descricao": "Aprenda a desenvolver aplicativos Android modernos com Kotlin, Jetpack Compose, arquitetura MVVM, Coroutines e publicação na Play Store.",
+      "badges_disponiveis": [
+        {
+          "nome": "Kotlin Basics",
+          "descricao": "Fundamentos da linguagem Kotlin",
+          "xp_requerido": 3000
+        },
+        {
+          "nome": "Jetpack Compose Master",
+          "descricao": "UI declarativa moderna com Jetpack Compose",
+          "xp_requerido": 10000
+        },
+        {
+          "nome": "Kotlin Developer",
+          "descricao": "Conclusão da formação Kotlin Developer",
+          "xp_requerido": 17500
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": false,
+        "percentual_desconto": 0,
+        "descricao_promocao": "Sem promoção ativa no momento",
+        "validade_promocao": null
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1497.00,
+        "descricao": "Acesso vitalício incluindo projetos de apps Android completos"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Android Dev ao Vivo com Google Developers",
+          "frequencia": "Quinzenal",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Kotlin Coroutines na Prática",
+          "frequencia": "Mensal",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Introdução ao Kotlin — Sintaxe e Recursos",
+        "POO com Kotlin e Data Classes",
+        "Desenvolvimento Android com Kotlin",
+        "Jetpack Compose — UI Declarativa",
+        "Navegação e Arquitetura MVVM",
+        "Coroutines e Flow para Programação Assíncrona",
+        "Integração com APIs REST e Room Database",
+        "Publicação de Apps na Google Play Store"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 10,
+      "nome": "Formação Flutter Developer",
+      "tecnologia": "Flutter / Dart",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 9,
+      "xp_total": 19500,
+      "duracao_horas": 67,
+      "descricao": "Desenvolva aplicativos multiplataforma (Android, iOS, Web, Desktop) com Flutter e Dart, abrangendo widgets, estado, Firebase e CI/CD.",
+      "badges_disponiveis": [
+        {
+          "nome": "Dart Fundamentals",
+          "descricao": "Domine a linguagem Dart",
+          "xp_requerido": 2500
+        },
+        {
+          "nome": "Flutter UI Expert",
+          "descricao": "Construção de interfaces ricas com Flutter",
+          "xp_requerido": 9500
+        },
+        {
+          "nome": "Flutter Developer",
+          "descricao": "Conclusão da formação Flutter Developer",
+          "xp_requerido": 19500
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 35,
+        "descricao_promocao": "Parceria Google — 35% off com cupom FLUTTER2025",
+        "validade_promocao": "2025-09-30"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 1597.00,
+        "descricao": "Acesso vitalício com suporte à comunidade Flutter Brasil"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Flutter Widget of the Week ao Vivo",
+          "frequencia": "Semanal",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Hackathon Flutter — Build em 24h",
+          "frequencia": "Trimestral",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Introdução ao Dart — Variáveis, Funções e OOP",
+        "Ambiente Flutter e Primeiros Widgets",
+        "Layouts, Listas e Navegação no Flutter",
+        "Gerenciamento de Estado (Provider, Bloc, Riverpod)",
+        "Integração com APIs REST no Flutter",
+        "Firebase com Flutter (Auth, Firestore, Storage)",
+        "Testes no Flutter (Unit, Widget e Integration)",
+        "Flutter para Web e Desktop",
+        "Publicação nas Lojas (Play Store e App Store)"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 11,
+      "nome": "Formação SQL Database Specialist",
+      "tecnologia": "SQL / Banco de Dados Relacional",
+      "nivel": "Básico ao Avançado",
+      "numero_de_modulos": 7,
+      "xp_total": 15000,
+      "duracao_horas": 48,
+      "descricao": "Torne-se especialista em banco de dados relacionais com SQL, abrangendo modelagem, queries avançadas, índices, stored procedures, triggers e otimização.",
+      "badges_disponiveis": [
+        {
+          "nome": "SQL Beginner",
+          "descricao": "Complete os fundamentos de SQL",
+          "xp_requerido": 2500
+        },
+        {
+          "nome": "Database Modeler",
+          "descricao": "Domine modelagem de dados e normalização",
+          "xp_requerido": 7000
+        },
+        {
+          "nome": "SQL Database Specialist",
+          "descricao": "Conclusão da formação SQL Database Specialist",
+          "xp_requerido": 15000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 20,
+        "descricao_promocao": "Combo Data — desconto ao adquirir junto com a trilha de Machine Learning",
+        "validade_promocao": "2025-08-15"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 997.00,
+        "descricao": "Acesso vitalício ao conteúdo de bancos de dados"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "SQL Avançado ao Vivo — Query Optimization",
+          "frequencia": "Quinzenal",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "Desafio SQL — Resolução ao Vivo",
+          "frequencia": "Mensal",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Introdução a Bancos de Dados Relacionais e SQL",
+        "DDL e DML — Criação e Manipulação de Dados",
+        "Consultas Avançadas — JOINs, Subqueries e CTEs",
+        "Modelagem de Dados e Normalização (1FN, 2FN, 3FN)",
+        "Índices, Views e Performance Tuning",
+        "Stored Procedures, Functions e Triggers",
+        "Administração e Segurança de Bancos de Dados"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    },
+    {
+      "id": 12,
+      "nome": "Formação DevOps & Agile Culture",
+      "tecnologia": "DevOps / Docker / Kubernetes / CI-CD",
+      "nivel": "Intermediário ao Avançado",
+      "numero_de_modulos": 10,
+      "xp_total": 23000,
+      "duracao_horas": 80,
+      "descricao": "Domine a cultura DevOps, contêineres com Docker, orquestração com Kubernetes, pipelines de CI/CD com GitHub Actions e monitoramento de aplicações.",
+      "badges_disponiveis": [
+        {
+          "nome": "Docker Expert",
+          "descricao": "Domine contêineres e Docker Compose",
+          "xp_requerido": 5000
+        },
+        {
+          "nome": "Kubernetes Practitioner",
+          "descricao": "Orquestração de contêineres com Kubernetes",
+          "xp_requerido": 13000
+        },
+        {
+          "nome": "CI/CD Pipeline Master",
+          "descricao": "Pipelines automatizados com GitHub Actions e Jenkins",
+          "xp_requerido": 18000
+        },
+        {
+          "nome": "DevOps Engineer",
+          "descricao": "Conclusão da formação DevOps & Agile Culture",
+          "xp_requerido": 23000
+        }
+      ],
+      "promocoes": {
+        "desconto_disponivel": true,
+        "percentual_desconto": 50,
+        "descricao_promocao": "DevOps Week — 50% off em bootcamps relacionados",
+        "validade_promocao": "2025-11-15"
+      },
+      "vitalicio": {
+        "disponivel": true,
+        "preco_vitalicio_brl": 2197.00,
+        "descricao": "Acesso vitalício com laboratórios práticos em Kubernetes incluso"
+      },
+      "lives_ao_vivo": [
+        {
+          "titulo": "Kubernetes na Prática — Deploy ao Vivo",
+          "frequencia": "Semanal",
+          "plataforma": "YouTube DIO"
+        },
+        {
+          "titulo": "CI/CD Pipeline do Zero ao Vivo",
+          "frequencia": "Quinzenal",
+          "plataforma": "YouTube / Discord DIO"
+        },
+        {
+          "titulo": "DevOps Culture — Papo com Especialistas",
+          "frequencia": "Mensal",
+          "plataforma": "Discord DIO"
+        }
+      ],
+      "conteudos_modulos": [
+        "Fundamentos de DevOps e Cultura Ágil",
+        "Linux para DevOps — Comandos Essenciais",
+        "Contêineres com Docker e Docker Compose",
+        "Orquestração com Kubernetes",
+        "CI/CD com GitHub Actions",
+        "Integração Contínua com Jenkins",
+        "Infraestrutura como Código (Terraform)",
+        "Monitoramento com Prometheus e Grafana",
+        "Segurança em Pipelines DevSecOps",
+        "Projeto Final: Pipeline Completo em Produção"
+      ],
+      "certificado": true,
+      "plano_requerido": "Pro"
+    }
+  ],
+  "resumo": {
+    "total_trilhas": 12,
+    "tecnologias_cobertas": [
+      "Python", "Java", "Angular", "React", "Machine Learning",
+      "AWS", "Node.js", ".NET/C#", "Kotlin/Android", "Flutter/Dart",
+      "SQL", "DevOps/Docker/Kubernetes"
+    ],
+    "xp_total_disponivel": 230540,
+    "total_badges": 38,
+    "total_horas_conteudo": 802,
+    "planos_disponiveis": {
+      "free": "Acesso limitado a cursos introdutórios e desafios básicos",
+      "pro_mensal": "Acesso completo a todas as formações e bootcamps",
+      "pro_anual": "Melhor custo-benefício com desconto de até 60%",
+      "vitalicio": "Acesso permanente ao conteúdo adquirido, incluindo atualizações"
+    }
+  }
+}

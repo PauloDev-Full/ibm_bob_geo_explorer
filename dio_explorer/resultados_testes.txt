@@ -1,0 +1,148 @@
+﻿================================================================================
+  RELATORIO DE TESTES UNITARIOS — DIO EXPLORER
+  Gerado em: 20/09/2026 20:16:20
+  Python: 3.14.2 | pytest 9.1.1 | pytest-cov 7.1.0
+================================================================================
+
+SUMARIO
+-------
+- Modulo testado : dio_explorer/src/dio_commands.py
+- Arquivo de testes: dio_explorer/tests/test_dio_commands.py
+- Comandos cobertos : /trilha, /desafio, /certificado
+- Meta de cobertura: 70%
+
+================================================================================
+RESULTADO DOS TESTES (pytest -v)
+================================================================================
+
+============================= test session starts =============================
+platform win32 -- Python 3.14.2, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\redmi\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\redmi\OneDrive\┴rea de Trabalho\ibm_bob_geo
+plugins: cov-7.1.0
+collecting ... collected 86 items
+
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_iniciante PASSED [  1%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_intermediario_sem_acento PASSED [  2%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_intermediario_com_acento PASSED [  3%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_avancado_sem_acento PASSED [  4%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_avancado_com_acento PASSED [  5%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_uppercase_input PASSED [  6%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_unknown_falls_back PASSED [  8%]
+dio_explorer/tests/test_dio_commands.py::TestNormaliseLevel::test_empty_string_falls_back PASSED [  9%]
+dio_explorer/tests/test_dio_commands.py::TestGenerateCertId::test_format PASSED [ 10%]
+dio_explorer/tests/test_dio_commands.py::TestGenerateCertId::test_special_chars_stripped PASSED [ 11%]
+dio_explorer/tests/test_dio_commands.py::TestGenerateCertId::test_uniqueness PASSED [ 12%]
+dio_explorer/tests/test_dio_commands.py::TestLoadData::test_loads_real_file PASSED [ 13%]
+dio_explorer/tests/test_dio_commands.py::TestLoadData::test_loads_sample_file PASSED [ 15%]
+dio_explorer/tests/test_dio_commands.py::TestLoadData::test_missing_file_raises PASSED [ 16%]
+dio_explorer/tests/test_dio_commands.py::TestFindTrilha::test_finds_java_exact_case PASSED [ 17%]
+dio_explorer/tests/test_dio_commands.py::TestFindTrilha::test_finds_java_lowercase PASSED [ 18%]
+dio_explorer/tests/test_dio_commands.py::TestFindTrilha::test_finds_java_uppercase PASSED [ 19%]
+dio_explorer/tests/test_dio_commands.py::TestFindTrilha::test_returns_none_for_unknown PASSED [ 20%]
+dio_explorer/tests/test_dio_commands.py::TestFindTrilha::test_finds_angular PASSED [ 22%]
+dio_explorer/tests/test_dio_commands.py::TestFindTrilha::test_empty_string_returns_none PASSED [ 23%]
+dio_explorer/tests/test_dio_commands.py::TestListTecnologias::test_returns_list PASSED [ 24%]
+dio_explorer/tests/test_dio_commands.py::TestListTecnologias::test_contains_java_and_angular PASSED [ 25%]
+dio_explorer/tests/test_dio_commands.py::TestListTecnologias::test_count_matches_trilhas PASSED [ 26%]
+dio_explorer/tests/test_dio_commands.py::TestListTecnologias::test_empty_data PASSED [ 27%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_returns_string PASSED [ 29%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_title_present PASSED [ 30%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_nivel_present PASSED [ 31%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_duracao_present PASSED [ 32%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_xp_present PASSED [ 33%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_certificado_sim PASSED [ 34%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_modulos_listed PASSED [ 36%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_badges_listed PASSED [ 37%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_lives_listed PASSED [ 38%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_promocao_active_shown PASSED [ 39%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_vitalicio_shown PASSED [ 40%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_footer_tip_present PASSED [ 41%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_java_lowercase PASSED [ 43%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_java_mixed_case PASSED [ 44%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_angular_certificado_nao PASSED [ 45%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_angular_no_promo_block PASSED [ 46%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_angular_no_vitalicio_block PASSED [ 47%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_real_file_java_trilha PASSED [ 48%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_unknown_technology_raises PASSED [ 50%]
+dio_explorer/tests/test_dio_commands.py::TestCmdTrilha::test_error_message_contains_available_techs PASSED [ 51%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_java_iniciante_returns_tuple PASSED [ 52%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_java_intermediario_output PASSED [ 53%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_java_avancado_output PASSED [ 54%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_challenge_header_present PASSED [ 55%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_sections_present PASSED [ 56%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_footer_certificado_tip PASSED [ 58%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_nivel_shown_in_output PASSED [ 59%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_invalid_level_falls_back_to_intermediario PASSED [ 60%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_invalid_level_warning_in_output PASSED [ 61%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_avancado_without_accent_normalised PASSED [ 62%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_intermediario_without_accent_normalised PASSED [ 63%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_angular_desafio_generates_output PASSED [ 65%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_angular_intermediario PASSED [ 66%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_real_file_java_desafio PASSED [ 67%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_unknown_technology_raises PASSED [ 68%]
+dio_explorer/tests/test_dio_commands.py::TestCmdDesafio::test_error_lists_available_techs PASSED [ 69%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_returns_string PASSED [ 70%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_header_present PASSED [ 72%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_user_name_in_output PASSED [ 73%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_trilha_name_in_output PASSED [ 74%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_tecnologia_in_output PASSED [ 75%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_nivel_in_output PASSED [ 76%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_modules_count_in_output PASSED [ 77%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_duracao_in_output PASSED [ 79%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_xp_in_output PASSED [ 80%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_badges_listed PASSED [ 81%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_cert_id_present PASSED [ 82%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_date_present PASSED [ 83%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_verification_url PASSED [ 84%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_footer_tip_present PASSED [ 86%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_java_lowercase PASSED [ 87%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_java_uppercase PASSED [ 88%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_different_student_name PASSED [ 89%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_auto_cert_id_format PASSED [ 90%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_real_file_java_certificado PASSED [ 91%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_unknown_technology_raises PASSED [ 93%]
+dio_explorer/tests/test_dio_commands.py::TestCmdCertificado::test_error_lists_available_techs PASSED [ 94%]
+dio_explorer/tests/test_dio_commands.py::TestFullFlow::test_full_flow_java PASSED [ 95%]
+dio_explorer/tests/test_dio_commands.py::TestFullFlow::test_full_flow_all_levels PASSED [ 96%]
+dio_explorer/tests/test_dio_commands.py::TestFullFlow::test_trilha_to_desafio_consistency PASSED [ 97%]
+dio_explorer/tests/test_dio_commands.py::TestFullFlow::test_all_technologies_have_valid_trilha PASSED [ 98%]
+dio_explorer/tests/test_dio_commands.py::TestFullFlow::test_all_technologies_certificate_generation PASSED [100%]
+
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.2-final-0 _______________
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+dio_explorer\src\dio_commands.py      89      1    99%   291
+----------------------------------------------------------------
+TOTAL                                 89      1    99%
+============================= 86 passed in 0.43s ==============================
+
+
+================================================================================
+SAIDAS DOS COMANDOS BOB (/trilha, /desafio, /certificado)
+================================================================================
+
+python.exe : Traceback (most recent call last):
+No linha:37 caractere:15
++ $CMD_OUTPUT = & $PYTHON -c $PYTHON_SCRIPT 2>&1 | Out-String
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 10, in <module>
+    print(cmd_trilha('Java', DATA))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\redmi\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f3af' in position 2: character maps to <undefined>
+======================================================================
+/trilha Java
+======================================================================
+
+
+================================================================================
+FIM DO RELATORIO
+================================================================================
