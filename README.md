@@ -5,7 +5,7 @@
 ![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-purple)
 ![Tests](https://img.shields.io/badge/tests-86%20passed-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-99%25-brightgreen)
-![CI](https://github.com/your-org/ibm_bob_geo/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/PauloDev-Full/ibm_bob_geo_explorer/actions/workflows/ci.yml/badge.svg)
 
 **ibm_bob_geo_explorer** integra o **IBM Bob** (assistente de IA para desenvolvedores) com a plataforma **DIO — Digital Innovation One** via um servidor **MCP (Model Context Protocol)**. Ele expõe trilhas de formação, desafios de código e certificados diretamente no chat do Bob, tanto por slash commands quanto por linguagem natural, e oferece uma API REST para integração externa.
 
@@ -73,8 +73,8 @@
 ### 1 — Clonar o repositório
 
 ```bash
-git clone https://github.com/your-org/ibm_bob_geo.git
-cd ibm_bob_geo
+git clone https://github.com/PauloDev-Full/ibm_bob_geo_explorer.git
+cd ibm_bob_geo_explorer
 ```
 
 ### 2 — Instalar dependências Python
@@ -110,7 +110,7 @@ O arquivo `.bob/mcp.json` já está configurado. Ajuste o caminho absoluto se ne
     "ibm-bob-geo-explorer": {
       "command": "node",
       "args": [
-        "/caminho/absoluto/para/ibm_bob_geo/ibm_bob_geo_explorer/mcp/build/index.js"
+        "/caminho/absoluto/para/ibm_bob_geo_explorer/mcp/build/index.js"
       ],
       "env": {}
     }
@@ -177,12 +177,59 @@ cp .env.example .env
 | `desafio` | Gera um desafio de código | `tecnologia`, `nivel?` (iniciante / intermediário / avançado) |
 | `certificado` | Emite certificado de conclusão | `nome`, `tecnologia` |
 
+### Exemplos de Retorno das Ferramentas MCP
+
+#### `list_trilhas`
+```json
+{
+  "trilhas": [
+    "Python", "Java", "React", "Node.js", "Angular",
+    "Flutter", "Kotlin", "Spring Boot", "TypeScript", "AWS"
+  ]
+}
+```
+
+#### `trilha`
+```json
+{
+  "tecnologia": "Python",
+  "modulos": ["Fundamentos", "POO", "APIs com FastAPI", "Data Science"],
+  "badges": ["Python Essentials", "Python Pro"],
+  "promocoes": ["Bootcamp Python AI", "Santander Bootcamp"],
+  "lives": ["Live Coding: Automação com Python", "Python para Data Science"]
+}
+```
+
+#### `desafio`
+```json
+{
+  "tecnologia": "Python",
+  "nivel": "intermediario",
+  "desafio": "Criar uma API RESTful com FastAPI para gerenciar trilhas de estudo.",
+  "criterios_aceite": [
+    "Endpoints CRUD completos",
+    "Validação de schema via Pydantic"
+  ]
+}
+```
+
+#### `certificado`
+```json
+{
+  "certificado": "Certificado de Conclusão",
+  "nome": "Ana Silva",
+  "tecnologia": "React",
+  "id": "a3f8c1d2",
+  "emitido_em": "2025-07-14"
+}
+```
+
 ---
 
 ## Estrutura de Arquivos
 
 ```
-ibm_bob_geo/
+ibm_bob_geo_explorer/
 ├── .bob/
 │   ├── mcp.json                         ← Registro do servidor MCP no Bob
 │   └── commands/
