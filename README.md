@@ -281,3 +281,45 @@ ibm_bob_geo_explorer/
 | `TestCmdDesafio` | Comando `/desafio` end-to-end |
 | `TestCmdCertificado` | Comando `/certificado` end-to-end |
 | `TestFullFlow` | Fluxo completo integrado |
+
+
+---
+
+## 🚀 Melhorias & Personalizações Realizadas
+
+Estas são as contribuições extras que fui além do escopo mínimo do desafio:
+
+| # | Melhoria | Descrição |
+|---|----------|-----------|
+| 1 | **Servidor MCP duplo (stdio + HTTP)** | Além do transporte `stdio` exigido pelo Bob, implementei um servidor HTTP com Express (`http.ts`), suportando autenticação Bearer via `API_KEY` e CORS configurável — ideal para integrações com n8n, Zapier ou qualquer API Gateway. |
+| 2 | **Autenticação por API Key no servidor HTTP** | O endpoint `/mcp` valida um header `Authorization: Bearer <token>` quando `API_KEY` está definido. Sem configuração, o servidor funciona sem autenticação — seguro por padrão. |
+| 3 | **Templates de desafio por tecnologia e nível** | Criei templates detalhados de desafios para Java (iniciante / intermediário / avançado) com título, descrição, exemplos de entrada/saída, dica e critérios de aceitação. As demais tecnologias usam um template genérico com problemas clássicos de algoritmo. |
+| 4 | **Suíte de testes com 86 casos (99% de cobertura)** | Organizei os testes em 9 classes bem definidas cobrindo caminhos felizes, edge cases, inputs inválidos, case-insensitivity e fluxo de integração completo. O CI falha se a cobertura cair abaixo de 70%. |
+| 5 | **Pipeline CI/CD com matriz de versões** | O GitHub Actions testa Python 3.10 / 3.11 / 3.12 e Node.js 18 / 20 / 22 em paralelo, garantindo compatibilidade ampla sem esforço manual. |
+| 6 | **`pyproject.toml` com dependências opcionais** | O projeto é instalável como pacote Python (`pip install -e ".[dev]"`) com separação clara entre dependências de runtime (nenhuma!) e de desenvolvimento. |
+| 7 | **Base de dados ficcionalmente rica** | O `trilhas_dio.json` contém 10 trilhas com campos completos: módulos, badges com XP, lives ao vivo, promoções com validade e opção de plano vitalício — tornando os outputs do MCP informativos e realistas. |
+| 8 | **Função determinística para testes de certificado** | O parâmetro `cert_id` opcional em `cmd_certificado()` permite fixar o ID do certificado nos testes, eliminando a necessidade de mocks e tornando os asserts exatos. |
+
+---
+
+## 📖 O Que Aprendi Durante o Desafio
+
+### 🤖 IBM Bob e o Model Context Protocol (MCP)
+Aprendi na prática como o **Bob** funciona como interface de IA para desenvolvedores e como o **MCP** cria uma ponte entre o assistente e ferramentas externas. Entendi a diferença entre os transportes **stdio** (local, sem servidor) e **HTTP** (remoto, com autenticação) e quando usar cada um.
+
+### 🔧 Construção de um servidor MCP real
+Implementar o servidor MCP em TypeScript com o SDK `@modelcontextprotocol/sdk` me mostrou como registrar tools, validar inputs com `zod` e estruturar respostas. Aprendi que o protocolo é agnóstico à linguagem e que qualquer processo que converse via stdio pode ser um servidor MCP.
+
+### 🧪 Cultura de testes como primeiro cidadão
+Ao escrever 86 testes antes de refatorar o código, internalizei o valor de funções puras e inputs opcionais (`data_path`, `cert_id`). A separação entre lógica core (Python puro) e integração (servidor MCP) facilitou enormíssimo a testabilidade — não precisei de nenhum mock de I/O.
+
+### 🔒 Boas práticas de segurança em projetos abertos
+Aprendi a distinguir o que vai no `.gitignore` vs. o que fica como `.env.example`. O padrão de nunca commitar o `.env` real e documentar todas as variáveis no exemplo é fundamental para projetos open-source. Também reforcei que senhas e tokens jamais devem aparecer nos exemplos de README.
+
+### ⚙️ CI/CD com GitHub Actions
+Configurar pipelines com matriz de versões (Python 3.10–3.12, Node.js 18–22) me mostrou como garantir retrocompatibilidade de forma automatizada. Entendi o papel do `cache: pip` e `npm ci` para builds rápidos e reproducíveis.
+
+### 📐 Arquitetura em camadas
+O projeto me fez pensar em separação de responsabilidades: dados (JSON), lógica core (Python), interface de comando (slash commands), servidor de protocolo (TypeScript/MCP) e transporte (stdio/HTTP) são camadas independentes que podem evoluir sem quebrar as demais.
+
+---
