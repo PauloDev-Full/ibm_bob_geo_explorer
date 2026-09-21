@@ -234,9 +234,3 @@ ibm_bob_geo/
 | `TestCmdDesafio` | Comando `/desafio` end-to-end |
 | `TestCmdCertificado` | Comando `/certificado` end-to-end |
 | `TestFullFlow` | Fluxo completo integrado |
-
----
-
-## Licença
-
-Este projeto está disponível sob a licença MIT.
