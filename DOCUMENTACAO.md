@@ -68,7 +68,7 @@ Este projeto é um **caso de uso real** de como integrar um modelo de IA (IBM Bo
             │              │  DIO Explorer MCP Server  │
             │              │  (TypeScript / Node.js)   │
             │              │                           │
-            │              │  dio_explorer/mcp/        │
+            │              │  ibm_bob_geo_explorer/mcp/        │
             │              │  ├── src/index.ts  ←stdio │
             │              │  ├── src/http.ts  ←HTTP   │
             │              │  └── src/dio.ts   ←lógica │
@@ -137,7 +137,7 @@ ibm_bob_geo/
 ### Passo 1 — Compilar o servidor MCP
 
 ```bash
-cd dio_explorer/mcp
+cd ibm_bob_geo_explorer/mcp
 npm install
 npm run build
 ```
@@ -154,7 +154,7 @@ O arquivo `.bob/mcp.json` já está configurado:
     "dio-explorer": {
       "command": "node",
       "args": [
-        "CAMINHO_ABSOLUTO/dio_explorer/mcp/build/index.js"
+        "CAMINHO_ABSOLUTO/ibm_bob_geo_explorer/mcp/build/index.js"
       ],
       "env": {}
     }
@@ -174,7 +174,7 @@ python -m pytest tests/ -v
 ### Passo 4 (opcional) — Iniciar o servidor HTTP
 
 ```bash
-PORT=3000 API_KEY=minha-chave node dio_explorer/mcp/build/http.js
+PORT=3000 API_KEY=minha-chave node ibm_bob_geo_explorer/mcp/build/http.js
 ```
 
 ---
@@ -330,7 +330,7 @@ Para integrações externas, o servidor também pode ser iniciado como API REST:
 
 ```bash
 # Iniciar servidor HTTP
-PORT=3000 API_KEY=minha-chave node dio_explorer/mcp/build/http.js
+PORT=3000 API_KEY=minha-chave node ibm_bob_geo_explorer/mcp/build/http.js
 
 # Health check
 curl http://localhost:3000/health
@@ -468,9 +468,9 @@ O servidor MCP é o componente que conecta o Bob com a lógica de negócio. Est�
 
 | Arquivo | Descrição |
 |---|---|
-| [`dio.ts`](dio_explorer/mcp/src/dio.ts) | Mirror em TypeScript da lógica do `dio_commands.py`. Funções `cmdTrilha`, `cmdDesafio`, `cmdCertificado`. |
-| [`index.ts`](dio_explorer/mcp/src/index.ts) | Servidor MCP com transporte **stdio** — usado pelo Bob localmente via `.bob/mcp.json` |
-| [`http.ts`](dio_explorer/mcp/src/http.ts) | Servidor MCP com transporte **HTTP** — usado para integrações externas e APIs |
+| [`dio.ts`](ibm_bob_geo_explorer/mcp/src/dio.ts) | Mirror em TypeScript da lógica do `dio_commands.py`. Funções `cmdTrilha`, `cmdDesafio`, `cmdCertificado`. |
+| [`index.ts`](ibm_bob_geo_explorer/mcp/src/index.ts) | Servidor MCP com transporte **stdio** — usado pelo Bob localmente via `.bob/mcp.json` |
+| [`http.ts`](ibm_bob_geo_explorer/mcp/src/http.ts) | Servidor MCP com transporte **HTTP** — usado para integrações externas e APIs |
 
 ### Dependências
 
